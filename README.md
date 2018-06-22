@@ -3,12 +3,22 @@
 
 This is a console tool in Net core 2.0 that allow you to read images and convert to HTML image tag using base64 codification.
 
-This tool is very useful for create rich content and use inside html email content for prevent email tools incompatibility.
+This tool is very useful for create rich content and use inside HTML email content for prevent incompatibilities.
 
-Use img base64 tag like this:
+The tool read images from a specified directory and generates HMTL file with the `img` tags.
 
+## Usage
 
-### embed style
+    img2htm <path>
+
+`<path>`    The path must be contains images in the top level. 
+
+In the same directory the tool generates the file `ImagesAsBase64.html`. This file 
+contains images as base64 format and the attribute `title` with the file name.
+
+Use Img Base64 generated tag like this:
+
+## Embed style
 
 Use like a style to apply:
 
@@ -23,9 +33,9 @@ This allow you to use the image multiple times in the same mail and save mail si
 
 **Remember**: don't use `<head>` tag in email content nd prevent use elements with background image style.
 
-### tag
+## Tag
 
-Use like a style to apply:
+Use like a style for apply:
 
     <img title="smile.jpg" src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAfwB/AAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAaABoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6f/ap/ah1bwzr0ngfwTK0OpxhVvtQiUPIjMARDEOcNgjLdQTgYINfG194p128vpLm81fUJ70tl5p7mRpCw7kk5zXZSaD4o8dfHjVtP0R5l8T3Wr3bJIsxhaN1eRnbfkbcAN+WPatfWv2X/i0fEEsN14ZvNRvbiRpXvVuI5UlZjku0pfGSTk7iD61+YYqpisdOVRKTSdlZOy/4J8rWlVxEnJJtXO+/Z9/aw8ReDfEFhoPje9udS8P3hVEvL8kz2m77sm9uXj55yTgcjpg/eoORkcivyu+MPw38bfDrUNLg8avJNPcW3+iSSXn2kLGpwYwcnG0np0+biv0q+Fc9zdfDHwhNeFjdyaPZvMW67zAhbPvnNfTZLiKzc8NWv7trX39P8j1MDUneVKfTufLP7SvwV8T+A/iQvxT8CQzTDzheXUVoheS1mA+eQoPvRuMlvq2eDV7Tf+ChVn/ZMZ1DwdOdTVMOLa8UQu2OoLLuUE9vmx6mvsCsG78A+GdQvHu7rw5pNzds25p5rGJpCfUsVzmt6+FqYWcquFqcqk9Va6v3RpUoypSc6UrX6WufFnh3wj4v/bG+KNv4o1+wfSfBtqVTPzCPyVYnyImON7sc7nHAyTxhVr7uhhS3hSKJFjjRQqqowAAMACnKojUKoCqowABgAUtelg8GsKpScuaUtW+500aKpJtu7e7P/9k=" />
 
